@@ -20,93 +20,94 @@ namespace InternshipTracker
 
         private void InitializeComponent()
         {
-            this.txtUsername = new TextBox();
-            this.txtPassword = new TextBox();
-            this.btnLogin = new Button();
-            this.lblUsername = new Label();
-            this.lblPassword = new Label();
-            this.lblTitle = new Label();
-
-            this.SuspendLayout();
-
-            // Form
-            this.BackColor = BackgroundColor;
-
-            // lblTitle
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            this.lblTitle.ForeColor = TextColor;
-            this.lblTitle.Location = new Point(70, 30);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new Size(300, 32);
-            this.lblTitle.Text = "Internship Tracker Login";
-
-            // lblUsername
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new Font("Segoe UI", 10F);
-            this.lblUsername.ForeColor = TextColor;
-            this.lblUsername.Location = new Point(50, 100);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new Size(75, 19);
-            this.lblUsername.Text = "Username:";
-
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnLogin = new Button();
+            lblUsername = new Label();
+            lblPassword = new Label();
+            lblTitle = new Label();
+            SuspendLayout();
+            // 
             // txtUsername
-            this.txtUsername.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtUsername.ForeColor = TextColor;
-            this.txtUsername.Font = new Font("Segoe UI", 10F);
-            this.txtUsername.Location = new Point(50, 125);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new Size(300, 25);
-            this.txtUsername.BorderStyle = BorderStyle.FixedSingle;
-
-            // lblPassword
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new Font("Segoe UI", 10F);
-            this.lblPassword.ForeColor = TextColor;
-            this.lblPassword.Location = new Point(50, 170);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new Size(73, 19);
-            this.lblPassword.Text = "Password:";
-
+            // 
+            txtUsername.BackColor = Color.FromArgb(40, 40, 40);
+            txtUsername.BorderStyle = BorderStyle.FixedSingle;
+            txtUsername.Font = new Font("Segoe UI", 10F);
+            txtUsername.Location = new Point(50, 125);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(300, 30);
+            txtUsername.TabIndex = 2;
+            // 
             // txtPassword
-            this.txtPassword.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtPassword.ForeColor = TextColor;
-            this.txtPassword.Font = new Font("Segoe UI", 10F);
-            this.txtPassword.Location = new Point(50, 195);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new Size(300, 25);
-            this.txtPassword.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtPassword.BackColor = Color.FromArgb(40, 40, 40);
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Font = new Font("Segoe UI", 10F);
+            txtPassword.Location = new Point(50, 195);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '•';
+            txtPassword.Size = new Size(300, 30);
+            txtPassword.TabIndex = 4;
+            // 
             // btnLogin
-            this.btnLogin.BackColor = AccentColor;
-            this.btnLogin.FlatStyle = FlatStyle.Flat;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            this.btnLogin.ForeColor = TextColor;
-            this.btnLogin.Location = new Point(125, 250);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new Size(150, 40);
-            this.btnLogin.Text = "LOGIN";
-            this.btnLogin.Cursor = Cursors.Hand;
-            this.btnLogin.Click += new EventHandler(this.btnLogin_Click);
-
+            // 
+            btnLogin.Cursor = Cursors.Hand;
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnLogin.Location = new Point(125, 250);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(150, 40);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "LOGIN";
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Segoe UI", 10F);
+            lblUsername.Location = new Point(50, 100);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(91, 23);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "Username:";
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Segoe UI", 10F);
+            lblPassword.Location = new Point(50, 170);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(84, 23);
+            lblPassword.TabIndex = 3;
+            lblPassword.Text = "Password:";
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblTitle.Location = new Point(70, 30);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(361, 41);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Internship Tracker Login";
+            // 
             // LoginForm
-            this.ClientSize = new Size(400, 330);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.btnLogin);
-            this.Name = "LoginForm";
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Text = "Login - Internship Tracker";
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            ClientSize = new Size(474, 330);
+            Controls.Add(lblTitle);
+            Controls.Add(lblUsername);
+            Controls.Add(txtUsername);
+            Controls.Add(lblPassword);
+            Controls.Add(txtPassword);
+            Controls.Add(btnLogin);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Login - Internship Tracker";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private TextBox txtUsername;

@@ -25,217 +25,228 @@ namespace InternshipTracker
 
         private void InitializeComponent()
         {
-            this.lblTitle = new Label();
-            this.lblFirstName = new Label();
-            this.txtFirstName = new TextBox();
-            this.lblLastName = new Label();
-            this.txtLastName = new TextBox();
-            this.lblEmail = new Label();
-            this.txtEmail = new TextBox();
-            this.lblPhone = new Label();
-            this.txtPhone = new TextBox();
-            this.lblBirthdate = new Label();
-            this.dtpBirthdate = new DateTimePicker();
-            this.lblMajor = new Label();
-            this.txtMajor = new TextBox();
-            this.lblGpa = new Label();
-            this.txtGpa = new TextBox();
-            this.btnSave = new Button();
-            this.btnCancel = new Button();
-
-            this.SuspendLayout();
-
-            // Form
-            this.BackColor = BackgroundColor;
-
+            lblTitle = new Label();
+            lblFirstName = new Label();
+            txtFirstName = new TextBox();
+            lblLastName = new Label();
+            txtLastName = new TextBox();
+            lblEmail = new Label();
+            txtEmail = new TextBox();
+            lblPhone = new Label();
+            txtPhone = new TextBox();
+            lblBirthdate = new Label();
+            dtpBirthdate = new DateTimePicker();
+            lblMajor = new Label();
+            txtMajor = new TextBox();
+            lblGpa = new Label();
+            txtGpa = new TextBox();
+            btnSave = new Button();
+            btnCancel = new Button();
+            SuspendLayout();
+            // 
             // lblTitle
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            this.lblTitle.ForeColor = AccentColor;
-            this.lblTitle.Location = new Point(30, 20);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new Size(200, 30);
-            this.lblTitle.Text = "Student Profile";
-
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lblTitle.Location = new Point(30, 20);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(210, 37);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Student Profile";
+            // 
             // lblFirstName
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new Font("Segoe UI", 10F);
-            this.lblFirstName.ForeColor = TextColor;
-            this.lblFirstName.Location = new Point(30, 80);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new Size(80, 19);
-            this.lblFirstName.Text = "First Name:";
-
+            // 
+            lblFirstName.AutoSize = true;
+            lblFirstName.Font = new Font("Segoe UI", 10F);
+            lblFirstName.Location = new Point(30, 80);
+            lblFirstName.Name = "lblFirstName";
+            lblFirstName.Size = new Size(96, 23);
+            lblFirstName.TabIndex = 1;
+            lblFirstName.Text = "First Name:";
+            // 
             // txtFirstName
-            this.txtFirstName.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtFirstName.ForeColor = TextColor;
-            this.txtFirstName.Font = new Font("Segoe UI", 10F);
-            this.txtFirstName.Location = new Point(150, 77);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new Size(250, 25);
-            this.txtFirstName.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtFirstName.BackColor = Color.FromArgb(40, 40, 40);
+            txtFirstName.BorderStyle = BorderStyle.FixedSingle;
+            txtFirstName.Font = new Font("Segoe UI", 10F);
+            txtFirstName.Location = new Point(150, 77);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(250, 30);
+            txtFirstName.TabIndex = 2;
+            // 
             // lblLastName
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new Font("Segoe UI", 10F);
-            this.lblLastName.ForeColor = TextColor;
-            this.lblLastName.Location = new Point(30, 120);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new Size(79, 19);
-            this.lblLastName.Text = "Last Name:";
-
+            // 
+            lblLastName.AutoSize = true;
+            lblLastName.Font = new Font("Segoe UI", 10F);
+            lblLastName.Location = new Point(30, 120);
+            lblLastName.Name = "lblLastName";
+            lblLastName.Size = new Size(95, 23);
+            lblLastName.TabIndex = 3;
+            lblLastName.Text = "Last Name:";
+            // 
             // txtLastName
-            this.txtLastName.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtLastName.ForeColor = TextColor;
-            this.txtLastName.Font = new Font("Segoe UI", 10F);
-            this.txtLastName.Location = new Point(150, 117);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new Size(250, 25);
-            this.txtLastName.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtLastName.BackColor = Color.FromArgb(40, 40, 40);
+            txtLastName.BorderStyle = BorderStyle.FixedSingle;
+            txtLastName.Font = new Font("Segoe UI", 10F);
+            txtLastName.Location = new Point(150, 117);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(250, 30);
+            txtLastName.TabIndex = 4;
+            // 
             // lblEmail
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new Font("Segoe UI", 10F);
-            this.lblEmail.ForeColor = TextColor;
-            this.lblEmail.Location = new Point(30, 160);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new Size(47, 19);
-            this.lblEmail.Text = "Email:";
-
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 10F);
+            lblEmail.Location = new Point(30, 160);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(55, 23);
+            lblEmail.TabIndex = 5;
+            lblEmail.Text = "Email:";
+            // 
             // txtEmail
-            this.txtEmail.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtEmail.ForeColor = TextColor;
-            this.txtEmail.Font = new Font("Segoe UI", 10F);
-            this.txtEmail.Location = new Point(150, 157);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new Size(250, 25);
-            this.txtEmail.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtEmail.BackColor = Color.FromArgb(40, 40, 40);
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Font = new Font("Segoe UI", 10F);
+            txtEmail.Location = new Point(150, 157);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(250, 30);
+            txtEmail.TabIndex = 6;
+            // 
             // lblPhone
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Font = new Font("Segoe UI", 10F);
-            this.lblPhone.ForeColor = TextColor;
-            this.lblPhone.Location = new Point(30, 200);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new Size(51, 19);
-            this.lblPhone.Text = "Phone:";
-
+            // 
+            lblPhone.AutoSize = true;
+            lblPhone.Font = new Font("Segoe UI", 10F);
+            lblPhone.Location = new Point(30, 200);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(63, 23);
+            lblPhone.TabIndex = 7;
+            lblPhone.Text = "Phone:";
+            // 
             // txtPhone
-            this.txtPhone.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtPhone.ForeColor = TextColor;
-            this.txtPhone.Font = new Font("Segoe UI", 10F);
-            this.txtPhone.Location = new Point(150, 197);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new Size(250, 25);
-            this.txtPhone.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtPhone.BackColor = Color.FromArgb(40, 40, 40);
+            txtPhone.BorderStyle = BorderStyle.FixedSingle;
+            txtPhone.Font = new Font("Segoe UI", 10F);
+            txtPhone.Location = new Point(150, 197);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(250, 30);
+            txtPhone.TabIndex = 8;
+            // 
             // lblBirthdate
-            this.lblBirthdate.AutoSize = true;
-            this.lblBirthdate.Font = new Font("Segoe UI", 10F);
-            this.lblBirthdate.ForeColor = TextColor;
-            this.lblBirthdate.Location = new Point(30, 240);
-            this.lblBirthdate.Name = "lblBirthdate";
-            this.lblBirthdate.Size = new Size(72, 19);
-            this.lblBirthdate.Text = "Birthdate:";
-
+            // 
+            lblBirthdate.AutoSize = true;
+            lblBirthdate.Font = new Font("Segoe UI", 10F);
+            lblBirthdate.Location = new Point(30, 240);
+            lblBirthdate.Name = "lblBirthdate";
+            lblBirthdate.Size = new Size(84, 23);
+            lblBirthdate.TabIndex = 9;
+            lblBirthdate.Text = "Birthdate:";
+            // 
             // dtpBirthdate
-            this.dtpBirthdate.CalendarMonthBackground = Color.FromArgb(40, 40, 40);
-            this.dtpBirthdate.CalendarForeColor = TextColor;
-            this.dtpBirthdate.Font = new Font("Segoe UI", 10F);
-            this.dtpBirthdate.Location = new Point(150, 237);
-            this.dtpBirthdate.Name = "dtpBirthdate";
-            this.dtpBirthdate.Size = new Size(250, 25);
-
+            // 
+            dtpBirthdate.CalendarMonthBackground = Color.FromArgb(40, 40, 40);
+            dtpBirthdate.Font = new Font("Segoe UI", 10F);
+            dtpBirthdate.Location = new Point(150, 237);
+            dtpBirthdate.Name = "dtpBirthdate";
+            dtpBirthdate.Size = new Size(250, 30);
+            dtpBirthdate.TabIndex = 10;
+            // 
             // lblMajor
-            this.lblMajor.AutoSize = true;
-            this.lblMajor.Font = new Font("Segoe UI", 10F);
-            this.lblMajor.ForeColor = TextColor;
-            this.lblMajor.Location = new Point(30, 280);
-            this.lblMajor.Name = "lblMajor";
-            this.lblMajor.Size = new Size(50, 19);
-            this.lblMajor.Text = "Major:";
-
+            // 
+            lblMajor.AutoSize = true;
+            lblMajor.Font = new Font("Segoe UI", 10F);
+            lblMajor.Location = new Point(30, 280);
+            lblMajor.Name = "lblMajor";
+            lblMajor.Size = new Size(58, 23);
+            lblMajor.TabIndex = 11;
+            lblMajor.Text = "Major:";
+            // 
             // txtMajor
-            this.txtMajor.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtMajor.ForeColor = TextColor;
-            this.txtMajor.Font = new Font("Segoe UI", 10F);
-            this.txtMajor.Location = new Point(150, 277);
-            this.txtMajor.Name = "txtMajor";
-            this.txtMajor.Size = new Size(250, 25);
-            this.txtMajor.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtMajor.BackColor = Color.FromArgb(40, 40, 40);
+            txtMajor.BorderStyle = BorderStyle.FixedSingle;
+            txtMajor.Font = new Font("Segoe UI", 10F);
+            txtMajor.Location = new Point(150, 277);
+            txtMajor.Name = "txtMajor";
+            txtMajor.Size = new Size(250, 30);
+            txtMajor.TabIndex = 12;
+            // 
             // lblGpa
-            this.lblGpa.AutoSize = true;
-            this.lblGpa.Font = new Font("Segoe UI", 10F);
-            this.lblGpa.ForeColor = TextColor;
-            this.lblGpa.Location = new Point(30, 320);
-            this.lblGpa.Name = "lblGpa";
-            this.lblGpa.Size = new Size(39, 19);
-            this.lblGpa.Text = "GPA:";
-
+            // 
+            lblGpa.AutoSize = true;
+            lblGpa.Font = new Font("Segoe UI", 10F);
+            lblGpa.Location = new Point(30, 320);
+            lblGpa.Name = "lblGpa";
+            lblGpa.Size = new Size(46, 23);
+            lblGpa.TabIndex = 13;
+            lblGpa.Text = "GPA:";
+            // 
             // txtGpa
-            this.txtGpa.BackColor = Color.FromArgb(40, 40, 40);
-            this.txtGpa.ForeColor = TextColor;
-            this.txtGpa.Font = new Font("Segoe UI", 10F);
-            this.txtGpa.Location = new Point(150, 317);
-            this.txtGpa.Name = "txtGpa";
-            this.txtGpa.Size = new Size(100, 25);
-            this.txtGpa.BorderStyle = BorderStyle.FixedSingle;
-
+            // 
+            txtGpa.BackColor = Color.FromArgb(40, 40, 40);
+            txtGpa.BorderStyle = BorderStyle.FixedSingle;
+            txtGpa.Font = new Font("Segoe UI", 10F);
+            txtGpa.Location = new Point(150, 317);
+            txtGpa.Name = "txtGpa";
+            txtGpa.Size = new Size(100, 30);
+            txtGpa.TabIndex = 14;
+            // 
             // btnSave
-            this.btnSave.BackColor = AccentColor;
-            this.btnSave.FlatStyle = FlatStyle.Flat;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            this.btnSave.ForeColor = TextColor;
-            this.btnSave.Location = new Point(200, 370);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new Size(100, 35);
-            this.btnSave.Text = "Save";
-            this.btnSave.Cursor = Cursors.Hand;
-            this.btnSave.Click += new EventHandler(this.btnSave_Click);
-
+            // 
+            btnSave.Cursor = Cursors.Hand;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnSave.Location = new Point(200, 370);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(100, 35);
+            btnSave.TabIndex = 15;
+            btnSave.Text = "Save";
+            btnSave.Click += btnSave_Click;
+            // 
             // btnCancel
-            this.btnCancel.BackColor = AccentColor;
-            this.btnCancel.FlatStyle = FlatStyle.Flat;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            this.btnCancel.ForeColor = TextColor;
-            this.btnCancel.Location = new Point(310, 370);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new Size(100, 35);
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.Cursor = Cursors.Hand;
-            this.btnCancel.Click += new EventHandler(this.btnCancel_Click);
-
+            // 
+            btnCancel.Cursor = Cursors.Hand;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnCancel.Location = new Point(310, 370);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(100, 35);
+            btnCancel.TabIndex = 16;
+            btnCancel.Text = "Cancel";
+            btnCancel.Click += btnCancel_Click;
+            // 
             // StudentProfileForm
-            this.ClientSize = new Size(450, 440);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.lblBirthdate);
-            this.Controls.Add(this.dtpBirthdate);
-            this.Controls.Add(this.lblMajor);
-            this.Controls.Add(this.txtMajor);
-            this.Controls.Add(this.lblGpa);
-            this.Controls.Add(this.txtGpa);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnCancel);
-            this.Name = "StudentProfileForm";
-            this.StartPosition = FormStartPosition.CenterParent;
-            this.Text = "Student Profile";
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            ClientSize = new Size(450, 440);
+            Controls.Add(lblTitle);
+            Controls.Add(lblFirstName);
+            Controls.Add(txtFirstName);
+            Controls.Add(lblLastName);
+            Controls.Add(txtLastName);
+            Controls.Add(lblEmail);
+            Controls.Add(txtEmail);
+            Controls.Add(lblPhone);
+            Controls.Add(txtPhone);
+            Controls.Add(lblBirthdate);
+            Controls.Add(dtpBirthdate);
+            Controls.Add(lblMajor);
+            Controls.Add(txtMajor);
+            Controls.Add(lblGpa);
+            Controls.Add(txtGpa);
+            Controls.Add(btnSave);
+            Controls.Add(btnCancel);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "StudentProfileForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Student Profile";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private Label lblTitle;
