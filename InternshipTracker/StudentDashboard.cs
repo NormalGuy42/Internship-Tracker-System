@@ -11,7 +11,7 @@ namespace InternshipTracker
         private static readonly Color BackgroundColor = ColorTranslator.FromHtml("#191919");
         private static readonly Color AccentColor = ColorTranslator.FromHtml("#2a84ff");
         private static readonly Color TextColor = Color.White;
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Madiou\source\repos\InternshipTracker\InternshipTracker\db.mdff;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Madiou\source\repos\InternshipTracker\InternshipTracker\db.mdf;Integrated Security=True";
 
         public StudentDashboard()
         {
@@ -125,9 +125,9 @@ namespace InternshipTracker
             this.btnViewProfile.FlatAppearance.BorderSize = 0;
             this.btnViewProfile.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             this.btnViewProfile.ForeColor = TextColor;
-            this.btnViewProfile.Location = new Point(760, 575);
+            this.btnViewProfile.Location = new Point(660, 575);
             this.btnViewProfile.Name = "btnViewProfile";
-            this.btnViewProfile.Size = new Size(110, 35);
+            this.btnViewProfile.Size = new Size(200, 35);
             this.btnViewProfile.Text = "View Profile";
             this.btnViewProfile.Cursor = Cursors.Hand;
             this.btnViewProfile.Click += new EventHandler(this.btnViewProfile_Click);

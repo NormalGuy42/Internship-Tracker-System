@@ -20,6 +20,7 @@ namespace InternshipTracker
 
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Button();
@@ -28,6 +29,38 @@ namespace InternshipTracker
             lblTitle = new Label();
             SuspendLayout();
             // 
+=======
+            this.txtUsername = new TextBox();
+            this.txtPassword = new TextBox();
+            this.btnLogin = new Button();
+            this.lblUsername = new Label();
+            this.lblPassword = new Label();
+            this.lblTitle = new Label();
+
+            this.SuspendLayout();
+
+            // Form
+            this.BackColor = BackgroundColor;
+
+            // lblTitle
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            this.lblTitle.ForeColor = TextColor;
+            this.lblTitle.Location = new Point(30, 30);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new Size(300, 32);
+            this.lblTitle.Text = "Internship Tracker Login";
+
+            // lblUsername
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new Font("Segoe UI", 10F);
+            this.lblUsername.ForeColor = TextColor;
+            this.lblUsername.Location = new Point(50, 100);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new Size(75, 19);
+            this.lblUsername.Text = "Username:";
+
+>>>>>>> cf65bc1abecbb76264ddb80702c41dd5beb8f98a
             // txtUsername
             // 
             txtUsername.BackColor = Color.FromArgb(40, 40, 40);
