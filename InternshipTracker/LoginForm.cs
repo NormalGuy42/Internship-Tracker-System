@@ -36,7 +36,7 @@ namespace InternshipTracker
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             this.lblTitle.ForeColor = TextColor;
-            this.lblTitle.Location = new Point(70, 30);
+            this.lblTitle.Location = new Point(30, 30);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new Size(300, 32);
             this.lblTitle.Text = "Internship Tracker Login";
