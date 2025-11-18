@@ -11,7 +11,6 @@ namespace InternshipTracker
         private static readonly Color BackgroundColor = ColorTranslator.FromHtml("#191919");
         private static readonly Color AccentColor = ColorTranslator.FromHtml("#2a84ff");
         private static readonly Color TextColor = Color.White;
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Madiou\source\repos\InternshipTracker\InternshipTracker\db.mdf;Integrated Security=True";
 
         public LoginForm()
         {
@@ -20,16 +19,6 @@ namespace InternshipTracker
 
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            txtUsername = new TextBox();
-            txtPassword = new TextBox();
-            btnLogin = new Button();
-            lblUsername = new Label();
-            lblPassword = new Label();
-            lblTitle = new Label();
-            SuspendLayout();
-            // 
-=======
             this.txtUsername = new TextBox();
             this.txtPassword = new TextBox();
             this.btnLogin = new Button();
@@ -46,7 +35,7 @@ namespace InternshipTracker
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             this.lblTitle.ForeColor = TextColor;
-            this.lblTitle.Location = new Point(30, 30);
+            this.lblTitle.Location = new Point(20, 30);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new Size(300, 32);
             this.lblTitle.Text = "Internship Tracker Login";
@@ -60,87 +49,63 @@ namespace InternshipTracker
             this.lblUsername.Size = new Size(75, 19);
             this.lblUsername.Text = "Username:";
 
->>>>>>> cf65bc1abecbb76264ddb80702c41dd5beb8f98a
             // txtUsername
-            // 
-            txtUsername.BackColor = Color.FromArgb(40, 40, 40);
-            txtUsername.BorderStyle = BorderStyle.FixedSingle;
-            txtUsername.Font = new Font("Segoe UI", 10F);
-            txtUsername.Location = new Point(50, 125);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(300, 30);
-            txtUsername.TabIndex = 2;
-            // 
-            // txtPassword
-            // 
-            txtPassword.BackColor = Color.FromArgb(40, 40, 40);
-            txtPassword.BorderStyle = BorderStyle.FixedSingle;
-            txtPassword.Font = new Font("Segoe UI", 10F);
-            txtPassword.Location = new Point(50, 195);
-            txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '•';
-            txtPassword.Size = new Size(300, 30);
-            txtPassword.TabIndex = 4;
-            // 
-            // btnLogin
-            // 
-            btnLogin.Cursor = Cursors.Hand;
-            btnLogin.FlatAppearance.BorderSize = 0;
-            btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            btnLogin.Location = new Point(125, 250);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(150, 40);
-            btnLogin.TabIndex = 5;
-            btnLogin.Text = "LOGIN";
-            btnLogin.Click += btnLogin_Click;
-            // 
-            // lblUsername
-            // 
-            lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Segoe UI", 10F);
-            lblUsername.Location = new Point(50, 100);
-            lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(91, 23);
-            lblUsername.TabIndex = 1;
-            lblUsername.Text = "Username:";
-            // 
+            this.txtUsername.BackColor = Color.FromArgb(40, 40, 40);
+            this.txtUsername.ForeColor = TextColor;
+            this.txtUsername.Font = new Font("Segoe UI", 10F);
+            this.txtUsername.Location = new Point(50, 125);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new Size(300, 25);
+            this.txtUsername.BorderStyle = BorderStyle.FixedSingle;
+
             // lblPassword
-            // 
-            lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Segoe UI", 10F);
-            lblPassword.Location = new Point(50, 170);
-            lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(84, 23);
-            lblPassword.TabIndex = 3;
-            lblPassword.Text = "Password:";
-            // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblTitle.Location = new Point(70, 30);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(361, 41);
-            lblTitle.TabIndex = 0;
-            lblTitle.Text = "Internship Tracker Login";
-            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new Font("Segoe UI", 10F);
+            this.lblPassword.ForeColor = TextColor;
+            this.lblPassword.Location = new Point(50, 170);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new Size(73, 19);
+            this.lblPassword.Text = "Password:";
+
+            // txtPassword
+            this.txtPassword.BackColor = Color.FromArgb(40, 40, 40);
+            this.txtPassword.ForeColor = TextColor;
+            this.txtPassword.Font = new Font("Segoe UI", 10F);
+            this.txtPassword.Location = new Point(50, 195);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.Size = new Size(300, 25);
+            this.txtPassword.BorderStyle = BorderStyle.FixedSingle;
+
+            // btnLogin
+            this.btnLogin.BackColor = AccentColor;
+            this.btnLogin.FlatStyle = FlatStyle.Flat;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            this.btnLogin.ForeColor = TextColor;
+            this.btnLogin.Location = new Point(125, 250);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new Size(150, 40);
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.Cursor = Cursors.Hand;
+            this.btnLogin.Click += new EventHandler(this.btnLogin_Click);
+
             // LoginForm
-            // 
-            ClientSize = new Size(474, 330);
-            Controls.Add(lblTitle);
-            Controls.Add(lblUsername);
-            Controls.Add(txtUsername);
-            Controls.Add(lblPassword);
-            Controls.Add(txtPassword);
-            Controls.Add(btnLogin);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
-            Name = "LoginForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Login - Internship Tracker";
-            ResumeLayout(false);
-            PerformLayout();
+            this.ClientSize = new Size(400, 330);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.btnLogin);
+            this.Name = "LoginForm";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Login - Internship Tracker";
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         private TextBox txtUsername;
@@ -163,7 +128,7 @@ namespace InternshipTracker
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString))
                 {
                     conn.Open();
                     string query = "SELECT id, role FROM users WHERE username = @username AND password = @password";
@@ -214,8 +179,11 @@ namespace InternshipTracker
                 case "CompanyHR":
                     query = "SELECT id FROM companyHR WHERE userID = @userID";
                     break;
-                case "Administrator":
-                    query = "SELECT id FROM administrators WHERE userID = @userID";
+                case "Supervisor":
+                    query = "SELECT id FROM supervisors WHERE userID = @userID";
+                    break;
+                case "Admin":
+                    query = "SELECT id FROM admins WHERE userID = @userID";
                     break;
                 default:
                     return;
@@ -238,6 +206,15 @@ namespace InternshipTracker
             {
                 case "Student":
                     new StudentDashboard().Show();
+                    break;
+                case "CompanyHR":
+                    new CompanyHRDashboard().Show();
+                    break;
+                case "Supervisor":
+                    new SupervisorDashboard().Show();
+                    break;
+                case "Admin":
+                    new AdminDashboard().Show();
                     break;
                 default:
                     MessageBox.Show("Unknown role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

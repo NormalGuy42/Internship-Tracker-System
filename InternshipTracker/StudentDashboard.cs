@@ -11,7 +11,7 @@ namespace InternshipTracker
         private static readonly Color BackgroundColor = ColorTranslator.FromHtml("#191919");
         private static readonly Color AccentColor = ColorTranslator.FromHtml("#2a84ff");
         private static readonly Color TextColor = Color.White;
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Madiou\source\repos\InternshipTracker\InternshipTracker\db.mdf;Integrated Security=True";
+        
 
         public StudentDashboard()
         {
@@ -185,7 +185,7 @@ namespace InternshipTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString))
                 {
                     conn.Open();
                     string query = @"SELECT i.id, c.companyName, i.title, i.deadline, i.requirements 
@@ -212,7 +212,7 @@ namespace InternshipTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString))
                 {
                     conn.Open();
                     string query = @"SELECT a.id, c.companyName, i.title, a.status, a.submissionDate 
